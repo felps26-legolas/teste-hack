@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Animação estilo Matrix */
+.matrix-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #00ff00;
+    z-index: 1;
+    
+    
+}
+
+.falling-number{animation: fall  7s linear infinite;
+    color: green;
+font-size: 20px;
+position: absolute;} 
+
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+
+/* Progress bar estilo */
+.progress-container {
+    width: 80%;
+    background-color: #333;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 25px;
+    background-color: #00ff00;
+    border-radius: 25px;
+}
+
+.message {
+    color: #00ff00;
+    margin-top: 20px;
+}
